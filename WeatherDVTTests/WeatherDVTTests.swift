@@ -84,12 +84,12 @@ class WeatherDVTTests: XCTestCase, WeatherForecastDelegate, CurrentWeatherDelega
     
     func onPlaceSearchSuccess(result: SearchResponse) {
         XCTAssertNotNil(result)
+        XCTAssert(result.candidates.count>0)
         testGooglePlaceSearchExpectation.fulfill()
     }
     
     func onPlaceSearchFailure(error: Error) {
         XCTAssertNotNil(error)
-        testGooglePlaceSearchExpectation.fulfill()
     }
     
     
@@ -106,7 +106,6 @@ class WeatherDVTTests: XCTestCase, WeatherForecastDelegate, CurrentWeatherDelega
     
     func onPlaceDetailsFailure(error: Error) {
         XCTAssertNotNil(error)
-        testPlaceDetailsExpectation.fulfill()
     }
        
     

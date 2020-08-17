@@ -9,8 +9,8 @@
 import Foundation
 
 struct GooglePlacesClient {
-    let googlePlacesSearchURL = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=AIzaSyDCGxZr5LY1dRxxqy0b_P1JnqVehMQrI3I&inputtype=textquery&input="
-    let googlePlacesDetailsURL = "https://maps.googleapis.com/maps/api/place/details/json?key=AIzaSyDCGxZr5LY1dRxxqy0b_P1JnqVehMQrI3I&place_id="
+    let googlePlacesSearchURL = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=AIzaSyA5KE95igZV5cfmaavfBtoy1UbL6zeOq-E&inputtype=textquery&input="
+    let googlePlacesDetailsURL = "https://maps.googleapis.com/maps/api/place/details/json?key=AIzaSyA5KE95igZV5cfmaavfBtoy1UbL6zeOq-E&place_id="
     
     var searchPlaceDelegate: GoogleSearchDelegate?
     var placeDetailsDelegate: PlaceDetailsDelegate?
